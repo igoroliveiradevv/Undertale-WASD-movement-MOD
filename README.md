@@ -10,11 +10,10 @@ layout and with a controller.
 - Mod version: **1.0.0**
 - Nexus Mods: https://www.nexusmods.com/undertale/mods/54
 - GitHub: https://github.com/igoroliveiradevv/Undertale-WASD-movement-MOD
-- Download: see **Releases**
+- Download: [Releases](https://github.com/igoroliveiradevv/Undertale-WASD-movement-MOD/releases)
 - Installer: `Installer/Setup.exe`
 - Installer source: `Installer/Installer_Source/installer.iss`
 - Build instructions: [BUILD.md](BUILD.md)
-- Installer binary: `Installer/Setup.exe`
 
 ## What the mod does
 

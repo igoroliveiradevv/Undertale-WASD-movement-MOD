@@ -3,9 +3,11 @@
 This document describes how to reproduce the mod and the installer from a
 legitimate copy of UNDERTALE. It is written for Windows and PowerShell.
 
-The repository contains source code only. It does **not** contain the
-original or modified `data.win`. You must supply your own legally obtained
-copy of the supported game.
+The repository contains source code, build instructions and the compiled
+installer at `Installer/Setup.exe`. It does **not** contain the original
+or modified `data.win` as a standalone file. You must supply your own
+legally obtained copy of the supported game to rebuild the data file from
+source.
 
 ## 1. Requirements
 
@@ -93,30 +95,31 @@ root:
 
 ```text
 Undertale-WASD-movement-MOD/
-├── BUILD.md
-├── README.md
-├── CHANGELOG.md
-├── TEST_RESULTS.md
-├── Installer/
-│   ├── Setup.exe
-│   └── Installer_Source/
-│       └── installer.iss
-└── Source/
-    ├── MOD_README.txt
-    ├── README.md
-    └── Modified GML/
-        ├── gml_Object_obj_asgore_spearswipe_Step_2.gml
-        ├── gml_Object_obj_heart_Step_0.gml
-        ├── gml_Object_obj_heart_sansbattle_Step_0.gml
-        ├── gml_Object_obj_joypadmenu_Draw_0.gml
-        ├── gml_Object_obj_purpleheart_Step_0.gml
-        ├── gml_Object_obj_settingsmenu_Draw_0.gml
-        ├── gml_Object_obj_settingsmenu_Step_0.gml
-        ├── gml_Object_obj_shootguy_Step_0.gml
-        ├── gml_Object_obj_time_Create_0.gml
-        ├── gml_Object_obj_time_Step_1.gml
-        ├── gml_Script_textdata_en.gml
-        └── gml_Script_textdata_ja.gml
+|-- BUILD.md
+|-- README.md
+|-- CHANGELOG.md
+|-- TEST_RESULTS.md
+|-- LICENSE
+|-- Installer/
+|   |-- Setup.exe
+|   `-- Installer_Source/
+|       `-- installer.iss
+`-- Source/
+    |-- MOD_README.txt
+    |-- README.md
+    `-- Modified GML/
+        |-- gml_Object_obj_asgore_spearswipe_Step_2.gml
+        |-- gml_Object_obj_heart_Step_0.gml
+        |-- gml_Object_obj_heart_sansbattle_Step_0.gml
+        |-- gml_Object_obj_joypadmenu_Draw_0.gml
+        |-- gml_Object_obj_purpleheart_Step_0.gml
+        |-- gml_Object_obj_settingsmenu_Draw_0.gml
+        |-- gml_Object_obj_settingsmenu_Step_0.gml
+        |-- gml_Object_obj_shootguy_Step_0.gml
+        |-- gml_Object_obj_time_Create_0.gml
+        |-- gml_Object_obj_time_Step_1.gml
+        |-- gml_Script_textdata_en.gml
+        `-- gml_Script_textdata_ja.gml
 ```
 
 `Installer/Installer_Source/installer.iss` expects this build layout,
@@ -124,14 +127,14 @@ relative to the repository root:
 
 ```text
 <repository root>/
-├── Mod Files/
-│   ├── data.win          (generated in step 6; never commit)
-│   └── README.txt        (copied from Source/MOD_README.txt in step 5)
-├── Installer/
-│   └── Installer_Source/
-│       └── installer.iss
-└── Source/
-    └── Modified GML/
+|-- Mod Files/
+|   |-- data.win          (generated in step 6; never commit)
+|   `-- README.txt        (copied from Source/MOD_README.txt in step 5)
+|-- Installer/
+|   `-- Installer_Source/
+|       `-- installer.iss
+`-- Source/
+    `-- Modified GML/
 ```
 
 Create the `Mod Files` folder:
@@ -139,7 +142,6 @@ Create the `Mod Files` folder:
 ```powershell
 New-Item -ItemType Directory -Force "Mod Files" | Out-Null
 ```
-
 ## 5. Create Mod Files\README.txt
 
 The installer packages `Mod Files\README.txt` and installs it as
