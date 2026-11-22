@@ -190,6 +190,7 @@ mod afterwards.
 ```text
 Undertale-WASD-movement-MOD/
 |-- BUILD.md
+|-- LICENSE
 |-- README.md
 |-- CHANGELOG.md
 |-- TEST_RESULTS.md
@@ -208,6 +209,14 @@ Game data (`data.win`), backups and development tools are not committed
 to the repository. The compiled installer embeds the modded game data and
 is distributed through Releases.
 
+## License
+
+MIT License. See [LICENSE](LICENSE).
+
+You may use, copy, modify, merge, publish, distribute, sublicense and sell
+this project, including as part of other projects, as long as the original
+copyright notice and permission notice are retained and credit is given to
+the original author, Igor Oliveira (igoroliveiradevv).
 ## Verification data
 
 - Original `data.win` SHA-256:
