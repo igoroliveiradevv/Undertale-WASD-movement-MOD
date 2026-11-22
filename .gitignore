@@ -6,3 +6,7 @@ Source/Tools/
 Source/Extracted/
 *.exe.bak
 *.tmp
+
+# Game data copies
+data.win.*
+Mod Files/data.win.*

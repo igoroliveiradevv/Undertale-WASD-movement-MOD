@@ -4,12 +4,16 @@ An optional WASD control scheme for the Steam PC release of UNDERTALE.
 Arrow keys remain available, so the game stays fully playable with either
 layout and with a controller.
 
+> Building from source? See [BUILD.md](BUILD.md) for dependencies,
+> the complete rebuild commands, and installer compilation steps.
+
 - Mod version: **1.0.0**
 - Nexus Mods: https://www.nexusmods.com/undertale/mods/54
 - GitHub: https://github.com/igoroliveiradevv/Undertale-WASD-movement-MOD
 - Download: see **Releases**
 - Installer: `Installer/Setup.exe`
 - Installer source: `Installer/Installer_Source/installer.iss`
+- Build instructions: [BUILD.md](BUILD.md)
 - Installer binary: `Installer/Setup.exe`
 
 ## What the mod does
@@ -185,22 +189,25 @@ mod afterwards.
 
 ```text
 Undertale-WASD-movement-MOD/
-+-- Installer/
-¦   +-- Setup.exe
-¦   +-- Installer_Source/
-¦       +-- installer.iss
-+-- Source/
-¦   +-- Modified GML/        (modified GameMaker code entries)
-¦   +-- MOD_README.txt       (readme installed with the mod)
-¦   +-- README.md            (rebuild notes)
-+-- README.md
-+-- CHANGELOG.md
-+-- TEST_RESULTS.md
+|-- BUILD.md
+|-- README.md
+|-- CHANGELOG.md
+|-- TEST_RESULTS.md
+|-- Installer/
+|   |-- Setup.exe
+|   `-- Installer_Source/
+|       `-- installer.iss
+`-- Source/
+    |-- README.md
+    |-- MOD_README.txt
+    `-- Modified GML/
+        `-- (12 modified .gml files)
 ```
 
 Game data (`data.win`), backups and development tools are not committed
 to the repository. The compiled installer embeds the modded game data and
 is distributed through Releases.
+
 ## Verification data
 
 - Original `data.win` SHA-256:
