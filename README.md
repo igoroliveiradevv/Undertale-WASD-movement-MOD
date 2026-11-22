@@ -5,6 +5,8 @@ Arrow keys remain available, so the game stays fully playable with either
 layout and with a controller.
 
 - Mod version: **1.0.0**
+- Nexus Mods: https://www.nexusmods.com/undertale/mods/54
+- GitHub: https://github.com/igoroliveiradevv/Undertale-WASD-movement-MOD
 - Download: see **Releases**
 - Installer: `Installer/Setup.exe`
 - Installer source: `Installer/Installer_Source/installer.iss`
@@ -184,13 +186,13 @@ mod afterwards.
 ```text
 Undertale-WASD-movement-MOD/
 +-- Installer/
-¦   +-- Setup.exe
-¦   +-- Installer_Source/
-¦       +-- installer.iss
+Â¦   +-- Setup.exe
+Â¦   +-- Installer_Source/
+Â¦       +-- installer.iss
 +-- Source/
-¦   +-- Modified GML/        (modified GameMaker code entries)
-¦   +-- MOD_README.txt       (readme installed with the mod)
-¦   +-- README.md            (rebuild notes)
+Â¦   +-- Modified GML/        (modified GameMaker code entries)
+Â¦   +-- MOD_README.txt       (readme installed with the mod)
+Â¦   +-- README.md            (rebuild notes)
 +-- README.md
 +-- CHANGELOG.md
 +-- TEST_RESULTS.md
